@@ -51,7 +51,7 @@ date_default_timezone_set('Asia/Tashkent');
 ================================================================================
 */
 
-$bot_token = "8365026644:AAHTVodmUA0tFKoYnJTC8eejDVNvhCH4sAw"; // bot token
+$bot_token = "8476948319:AAFC_QqOOUtCJ_GiLDkGalFW3qa16ksWvO0"; // bot token
 
 define('API_KEY',$bot_token);
 $bot_info = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getMe"));
@@ -61,7 +61,7 @@ if (!$bot_info || !$bot_info->ok) {
 }
 $bot = $bot_info->result->username;
 
-$taki_animora = "7058924526"; // admin_id
+$taki_animora = "7483732504"; // admin_id
 $admins = file_get_contents("admin/admins.txt");
 $admin = explode("\n",$admins);
 $studio_name = file_get_contents("admin/studio_name.txt");
@@ -4214,3 +4214,4 @@ $manhwaManager = new ManhwaManager($connect, $admin);
 if ($manhwaManager->handleUpdate($nurillayev)) {
     exit(); // Agar ManhwaManager xabarni qayta ishlagan bo'lsa, skriptni to'xtatish
 }
+
